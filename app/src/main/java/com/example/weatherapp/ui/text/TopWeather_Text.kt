@@ -2,9 +2,7 @@ package com.example.weatherapp.ui.text
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -16,14 +14,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.weatherapp.R
 
 
 @Composable
-fun TopWeatherText() {
+fun TopWeathertext() {
     val offset = Offset(0.0f, 0.8f)
     Box(
         modifier = Modifier
@@ -49,31 +46,3 @@ fun TopWeatherText() {
         )
     }
 }
-
-@Preview()
-@Composable
-fun TopWeatherTextPreview() {
-    val offset = Offset(0.0f, 0.8f)
-    Box(modifier = Modifier
-        .padding(top = 40.dp)
-        .fillMaxWidth(),
-        contentAlignment = Alignment.Center) {
-        Text(
-            stringResource(id = R.string.city_name),
-            fontWeight = FontWeight.Bold,
-            textAlign = TextAlign.Center,
-            maxLines = 1,  // これを追加
-            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),  // 幅を最大にし、必要に応じて水平方向のパディングを調整
-            style = TextStyle(
-                fontSize = 60.sp,
-                color = Color.White,
-                shadow = Shadow(
-                    color = Color.DarkGray,
-                    offset = offset,
-                    blurRadius = 5f
-                )
-            )
-        )
-    }
-}
-

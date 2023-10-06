@@ -14,14 +14,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.weatherapp.R
 
 
 @Composable
-fun CenterWeatherText() {
+fun CenterWeathertext() {
     val offset = Offset(0.0f, 0.8f)
     Box(
         modifier = Modifier
@@ -46,30 +45,3 @@ fun CenterWeatherText() {
         )
     }
 }
-
-@Preview()
-@Composable
-fun CenterWeatherTextPreview() {
-    val offset = Offset(0.0f, 0.8f)
-    Box(modifier = Modifier
-        .fillMaxWidth(),
-        contentAlignment = Alignment.Center) {
-        Text(
-            stringResource(id = R.string.current_temperature),
-            fontWeight = FontWeight.Bold,
-            textAlign = TextAlign.Center,
-            maxLines = 1,
-            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
-            style = TextStyle(
-                fontSize = 60.sp,
-                color = Color.White,
-                shadow = Shadow(
-                    color = Color.DarkGray,
-                    offset = offset,
-                    blurRadius = 5f
-                )
-            )
-        )
-    }
-}
-
