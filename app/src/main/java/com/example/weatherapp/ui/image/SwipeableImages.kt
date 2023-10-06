@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyRow
@@ -50,6 +51,7 @@ fun SwipeableImages() {
                 painter = painterResource(id = imageData.resId),
                 contentDescription = "",
                 modifier = Modifier
+                    .offset(8.dp,0.dp)
                     .padding(imageData.padding.dp)
                     .size(imageData.width.dp, imageData.height.dp)
             )
