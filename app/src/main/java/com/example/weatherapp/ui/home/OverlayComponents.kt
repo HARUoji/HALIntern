@@ -6,7 +6,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.example.weatherapp.ui.image.Swipeable_Images
-import com.example.weatherapp.ui.text.TopWeather_Text
+import com.example.weatherapp.ui.text.CenterWeatherText
+import com.example.weatherapp.ui.text.TopWeatherText
 
 
 @Composable
@@ -14,8 +15,9 @@ fun OverlayComposable() {
     Box(modifier = Modifier.fillMaxSize()) {
         BackGround()
         Column {
-            TopWeather_Text()
+            TopWeatherText()
             Swipeable_Images()
+            CenterWeatherText()
         }
     }
 }

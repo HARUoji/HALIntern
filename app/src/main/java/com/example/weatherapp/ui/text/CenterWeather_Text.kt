@@ -2,9 +2,7 @@ package com.example.weatherapp.ui.text
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -23,16 +21,15 @@ import com.example.weatherapp.R
 
 
 @Composable
-fun TopWeatherText() {
+fun CenterWeatherText() {
     val offset = Offset(0.0f, 0.8f)
     Box(
         modifier = Modifier
-            .padding(top = 40.dp)
             .fillMaxWidth(),
         contentAlignment = Alignment.Center
     ) {
         Text(
-            stringResource(id = R.string.city_name),
+            stringResource(id = R.string.current_temperature),
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
             maxLines = 1,  // これを追加
@@ -52,14 +49,13 @@ fun TopWeatherText() {
 
 @Preview()
 @Composable
-fun TopWeatherTextPreview() {
+fun CenterWeatherTextPreview() {
     val offset = Offset(0.0f, 0.8f)
     Box(modifier = Modifier
-        .padding(top = 40.dp)
         .fillMaxWidth(),
         contentAlignment = Alignment.Center) {
         Text(
-            stringResource(id = R.string.city_name),
+            stringResource(id = R.string.current_temperature),
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
             maxLines = 1,  // これを追加
