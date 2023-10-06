@@ -32,8 +32,8 @@ fun CenterWeatherText() {
             stringResource(id = R.string.current_temperature),
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
-            maxLines = 1,  // これを追加
-            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),  // 幅を最大にし、必要に応じて水平方向のパディングを調整
+            maxLines = 1,
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
             style = TextStyle(
                 fontSize = 60.sp,
                 color = Color.White,
@@ -58,8 +58,8 @@ fun CenterWeatherTextPreview() {
             stringResource(id = R.string.current_temperature),
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
-            maxLines = 1,  // これを追加
-            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),  // 幅を最大にし、必要に応じて水平方向のパディングを調整
+            maxLines = 1,
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
             style = TextStyle(
                 fontSize = 60.sp,
                 color = Color.White,
