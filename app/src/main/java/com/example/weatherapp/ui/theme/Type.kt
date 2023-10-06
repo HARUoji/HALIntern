@@ -15,7 +15,6 @@ import com.example.weatherapp.R
 
 private val smartfont_ui = FontFamily(
     Font(R.font.smart_font_ui_p),
-
 )
 
 @Suppress("DEPRECATION")

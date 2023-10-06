@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">WeatherApp</string>
-<!--    <stirng name="city_name">台東区</stirng>-->
-<!--    <string name="current_temperature">30°</string>-->
-<!--    <string name="weather_forecast">明日天気にな～れ</string>-->
-<!--    <string name="night">今は夜です。寝ましょう。</string>-->
-<!--    <string name="morning">今は朝です。起きましょう</string>-->
+    <string name="city_name">台東区</string>
+    <string name="current_temperature">30°</string>
+    <string name="weather_forecast">明日天気にな～れ</string>
+    <string name="night">今は夜です。寝ましょう。</string>
+    <string name="morning">今は朝です。起きましょう</string>
 </resources>

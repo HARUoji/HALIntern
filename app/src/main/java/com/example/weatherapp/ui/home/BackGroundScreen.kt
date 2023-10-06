@@ -14,6 +14,7 @@ import com.example.weatherapp.ui.theme.WeatherAppTheme
 
 @Composable
 fun BackGround() {
+//    if(imageData.resI)
     Box(
         modifier = Modifier
             .fillMaxSize()

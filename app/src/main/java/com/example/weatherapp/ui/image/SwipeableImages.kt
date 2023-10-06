@@ -17,30 +17,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.weatherapp.R
 
-
-//@Composable
-//fun SwipeableImages() {
-//    val imageList = ImageLoader()
-//
-//    LazyRow(
-//        horizontalArrangement = Arrangement.spacedBy(16.dp),
-//        contentPadding = PaddingValues(horizontal = 16.dp)
-//    ) {
-//        items(imageList) { imageData ->
-//            Image(
-//                painter = painterResource(id = imageData.resId),
-//                contentDescription = null,
-//                modifier = Modifier
-//                    .size(imageData.width.dp, imageData.height.dp)
-//                    .background(Color.Gray, shape = RoundedCornerShape(4.dp))
-//            )
-//        }
-//    }
-//}
-
-
 @Composable
-fun SwipeableImages() {
+fun Swipeable_Images() {
     val imageList = ImageLoader()
     LazyRow(
         horizontalArrangement = Arrangement.spacedBy(16.dp),
@@ -51,8 +29,8 @@ fun SwipeableImages() {
                 painter = painterResource(id = imageData.resId),
                 contentDescription = "",
                 modifier = Modifier
-                    .offset(8.dp,0.dp)
                     .padding(imageData.padding.dp)
+                    .offset(8.dp,0.dp)
                     .size(imageData.width.dp, imageData.height.dp)
             )
         }
